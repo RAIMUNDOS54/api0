@@ -1,0 +1,15 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-Api0Application<api0>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "br.com.exactaworks.desafio.dinamica.gabriel.api0.Api0Application",
+            "projectName": "api0",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "encoding": "UTF-8"
+        }
+    ]
+}

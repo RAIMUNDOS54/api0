@@ -1,0 +1,8 @@
+br\com\exactaworks\desafio\dinamica\gabriel\api0\controller\ExpenseController.class
+br\com\exactaworks\desafio\dinamica\gabriel\api0\models\Expense.class
+br\com\exactaworks\desafio\dinamica\gabriel\api0\uri\ExpenseUri.class
+br\com\exactaworks\desafio\dinamica\gabriel\api0\dto\ExpenseDto.class
+br\com\exactaworks\desafio\dinamica\gabriel\api0\services\ExpenseService.class
+br\com\exactaworks\desafio\dinamica\gabriel\api0\Api0Application.class
+br\com\exactaworks\desafio\dinamica\gabriel\api0\config\Swagger2Configuration.class
+br\com\exactaworks\desafio\dinamica\gabriel\api0\repositories\ExpenseRepository.class

@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: br.com.exactaworks.desafio.dinamica.gabriel.api0.integration.ExpensesControllerIntegrationTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 33.471 s - in br.com.exactaworks.desafio.dinamica.gabriel.api0.integration.ExpensesControllerIntegrationTest
