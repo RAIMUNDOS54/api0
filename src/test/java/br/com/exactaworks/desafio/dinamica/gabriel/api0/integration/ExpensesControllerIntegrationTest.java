@@ -22,8 +22,7 @@ import io.restassured.RestAssured;
 
 @ExtendWith(MockitoExtension.class)
 @RunWith(JUnitPlatform.class)
-@SpringBootTest(classes = {Api0Application.class}, webEnvironment
-        = SpringBootTest.WebEnvironment.DEFINED_PORT)
+@SpringBootTest(classes = {Api0Application.class}, webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT)
 @ActiveProfiles("test")
 public class ExpensesControllerIntegrationTest {
 
@@ -34,14 +33,12 @@ public class ExpensesControllerIntegrationTest {
     }
 
     @Test
-    public void
-            givenUrl_whenSuccessOnGetsResponseAndJsonHasRequiredKV_thenCorrect() {
+    public void givenUrl_whenSuccessOnGetsResponseAndJsonHasRequiredKV_thenCorrect() {
         get("/api/expenses").then().statusCode(200);
     }
 
     @Test
-    public void
-            givenUrl_whenSuccessOnGetsResponseAndJsonHasOneExpense_thenCorrect() {
+    public void givenUrl_whenSuccessOnGetsResponseAndJsonHasOneExpense_thenCorrect() {
         get("/api/expenses/1").then().statusCode(200)
                 .assertThat().body("name",
                         equalTo("Gabriel"), "description",
@@ -49,8 +46,7 @@ public class ExpensesControllerIntegrationTest {
     }
 
     @Test
-    public void
-            givenUrl_whenSuccessOnGetsResponseAndJsonHasTwoExpense_thenCorrect() {
+    public void givenUrl_whenSuccessOnGetsResponseAndJsonHasTwoExpense_thenCorrect() {
         get("/api/expenses/2").then().statusCode(200)
                 .assertThat().body("name",
                         equalTo("Veloso"), "description",

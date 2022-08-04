@@ -40,12 +40,15 @@ public class ExpenseService {
 
     public Expense getExpense(long expenseId) {
         Optional<Expense> expense = expenseRepository.findById(expenseId);
+
         return expense.get();
     }
 
     public Expense saveExpense(ExpenseDto expenseDto) {
         ModelMapper modelMapper = new ModelMapper();
+
         Expense expense = modelMapper.map(expenseDto, Expense.class);
+        
         return expenseRepository.save(expense);
     }
 

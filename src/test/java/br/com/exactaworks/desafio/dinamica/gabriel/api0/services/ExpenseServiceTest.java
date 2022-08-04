@@ -31,9 +31,11 @@ public class ExpenseServiceTest {
     @BeforeEach
     public void setup() {
         expenseService = new ExpenseService(expensesRepository);
-        Pageable pageable = PageRequest.of(0, 5, Sort.by(
-                Sort.Order.asc("name"),
+
+        Pageable pageable = PageRequest.of(0, 5, 
+                Sort.by(Sort.Order.asc("name"), 
                 Sort.Order.desc("id")));
+
         Mockito.lenient().when(expensesRepository.findAll(pageable)).thenReturn(ExpenseMock.createExpenses());
     }
 
@@ -43,9 +45,12 @@ public class ExpenseServiceTest {
         Pageable pageable = PageRequest.of(0, 5, Sort.by(
                 Sort.Order.asc("name"),
                 Sort.Order.desc("id")));
+
         Page<Expense> expenses = expenseService.getExpenses(pageable);
+
         assertEquals(expenses.getTotalPages(), 1);
         assertEquals(expenses.getNumberOfElements(), 2);
+
         assertNotNull(expenses);
     }
 
@@ -56,30 +61,15 @@ public class ExpenseServiceTest {
         @Test
         void justtest() {
             String name = "just testing";
+
             assertEquals(name, "just testing");
         }
 
         @Test
         void justtest1() {
             String name = "just testin";
+
             assertEquals(name, "just testin");
         }
     }
-
-    /*@Nested
-    @DisplayName("Unhappy Tests")
-    class unhappycases {
-
-        @Test
-        void justtest() {
-            String name = "just testin";
-            assertEquals(name, "just testing");
-        }
-
-        @Test
-        void justtest1() {
-            String name = "just testing";
-            assertEquals(name, "just testincc");
-        }
-    }*/
 }
