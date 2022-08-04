@@ -38,6 +38,7 @@ The SQL Server database is also hosted on this OCI VM Machine.
 Get All Expenses [GET]: http://168.138.149.235:8080/api/expenses
 
 Get Expense by ID [GET]: http://168.138.149.235:8080/api/expenses/{ID}
+
 Create Expense [POST]: http://168.138.149.235:8080/api/expenses/expense
 
 Swagger: [http://168.138.149.235:8080/api/swagger-ui/index.html](http://168.138.149.235:8080/api/swagger-ui/index.html)
