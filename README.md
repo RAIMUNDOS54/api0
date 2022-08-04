@@ -35,7 +35,8 @@ The SQL Server database is also hosted on this OCI VM Machine.
 
 **api0:
 
-Get All Expenses [GET]: http://168.138.149.235:8080/api/expenses 
+Get All Expenses [GET]: http://168.138.149.235:8080/api/expenses
+
 Get Expense by ID [GET]: http://168.138.149.235:8080/api/expenses/{ID}
 Create Expense [POST]: http://168.138.149.235:8080/api/expenses/expense
 
@@ -43,16 +44,20 @@ Swagger: [http://168.138.149.235:8080/api/swagger-ui/index.html](http://168.138.
 
 **api1:
 
-Get All Expenses [GET]: http://168.138.149.235:8081/api/expenses 
+Get All Expenses [GET]: http://168.138.149.235:8081/api/expenses
+
 Get Expense by ID [GET]: http://168.138.149.235:8081/api/expenses/{ID}
+
 Create Expense [POST]: http://168.138.149.235:8081/api/expenses/expense
 
 Swagger: [http://168.138.149.235:80810/swagger-ui/index.html](http://168.138.149.235:8081/swagger-ui/index.html)
 
 **api2: 
 
-Get All Expenses [GET]: http://168.138.149.235:8082/api/expenses 
+Get All Expenses [GET]: http://168.138.149.235:8082/api/expenses
+
 Get Expense by ID [GET]: http://168.138.149.235:8082/api/expenses/{ID}
+
 Create Expense [POST]: http://168.138.149.235:8082/api/expenses/expense
 
 Swagger: [http://168.138.149.235:8082/swagger/index.html](http://168.138.149.235:8082/swagger/index.html)
